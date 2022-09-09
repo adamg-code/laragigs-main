@@ -2,16 +2,16 @@ name: adamg-code/laragigs-main
 
 on:
   push:
-    branches: [main]
+    branches: [branch]
   pull_request:
-    branches: [main]
+    branches: [branch]
 
 permissions: write-all
 
 env:
   CI: false
-  Branches: main
-  MainBranch: main
+  Branches: branch
+  MainBranch: branch
   NPMRegistry: https://registry.npmjs.org/
   InstallCommand: npm i
   BuildCommand: npm run build
